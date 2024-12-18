@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Comunication">
+
+    <Button
+        android:id="@+id/led_on"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/close"
+        android:text="On"
+       />
+
+    <Button
+        android:id="@+id/led_off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/led_on"
+        android:layout_below="@id/close"
+        android:text="OFF"
+         />
+
+    <TextView
+        android:id="@+id/text_view_re"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/led_on"
+        android:text="Bluetooth recieveData:" />
+    <TextView
+        android:id="@+id/text_view_infro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/led_on"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/text_view_re"
+        android:text="hello" />
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Type here:" />
+
+    <EditText
+        android:id="@+id/entry"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label"
+        android:background="@android:drawable/editbox_background" />
+
+    <Button
+        android:id="@+id/open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/entry"
+        android:layout_marginLeft="10dip"
+        android:text="Open" />
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/open"
+        android:layout_toLeftOf="@id/open"
+        android:text="Send" />
+
+    <Button
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/send"
+        android:layout_toLeftOf="@id/send"
+        android:text="Close" />
+    <EditText
+        android:layout_below="@id/text_view_re"
+        android:id="@+id/edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+</RelativeLayout>
